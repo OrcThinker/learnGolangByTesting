@@ -11,5 +11,8 @@ func main() {
 const engHelloPrefix = "Hello, "
 
 func hello(name string) string {
+	if name == "" {
+		name = "World"
+	}
 	return engHelloPrefix + name
 }
